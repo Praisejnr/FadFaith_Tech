@@ -9,7 +9,7 @@
 :root {
   --light-cl: #fff;
   --dark-cl: #111;
-  --primary-cl: #2196F3;
+  --primary-cl: #2196f3;
   --secondary-cl: #800080;
   --sm-txt: 0.8rem;
   --bg-txt: 1.5rem;
@@ -20,31 +20,46 @@
   --transition: 0.5s ease-in-out;
 }
 
-a{
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../../fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../../fonts/Montserrat-Light.ttf");
+}
+
+a {
   text-decoration: none;
   color: var(--dark-cl);
+  font-family: "Montserrat-Light";
 }
 
-a,p{
+a,
+p {
   font-size: var(--sm-txt);
   color: var(--dark-cl);
+  font-family: "Montserrat-Light";
 }
 
-h3{
+h3 {
   font-size: var(--bg-txt);
   color: var(--dark-cl);
+  font-family: "Montserrat-Bold";
 }
 
-h1{
+h1 {
   font-size: var(--hd-txt);
   color: var(--dark-cl);
+  font-family: "Montserrat-Bold";
 }
 
-img{
+img {
   width: 100%;
 }
 
-header{
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -55,7 +70,7 @@ header{
   position: fixed;
 }
 
-section{
+section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,7 +81,7 @@ section{
   position: relative;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -76,33 +91,61 @@ section{
   padding: var(--md-pad);
 }
 
-.logo{
+.logo {
   display: flex;
   flex-direction: column;
   width: 50px;
   object-fit: cover;
 }
 
-.img_con{
+.img_con {
   display: flex;
   flex-direction: column;
   width: 300px;
   object-fit: cover;
 }
 
+.hamburger {
+  display: none;
+}
 
+.navBar {
+  display: flex;
+  flex-direction: row;
+}
 
+.navBar a {
+  padding: var(--btn-pad);
+  transition: var(--transition);
+}
 
+.navBar a:hover{
+  background-color: var(--primary-cl);
+  color: var(--light-cl);
+}
 
 /* MEDIA QUERY */
 @media (max-width: 750px) {
   :root {
-    --sm-txt: 0.8rem;
+    --sm-txt: 3rem;
     --bg-txt: 1.5rem;
     --hd-txt: 2rem;
     --btn-pad: 5px 10px;
     --md-pad: 20px 30px;
     --lg-pad: 40px 60px;
     --transition: 0.3s ease-in-out;
+  }
+
+  .active{
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .navBar{
+    display: none;
   }
 }
