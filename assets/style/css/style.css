@@ -236,7 +236,7 @@ section {
   background-color: var(--primary-cl);
   padding: var(--md-pad);
   transition: var(--transition);
-  animation: autoscrollcards 50s;
+  animation: autoscrollcards 50s infinite;
 }
 
 .slide:first-child {
@@ -252,8 +252,8 @@ section {
   gap: 10px;
 }
 
-.slide .img_con i {
-  font-size: 100px;
+.slide .img_con img {
+  font-size: 200px;
 }
 
 @keyframes autoscrollcards {
@@ -384,4 +384,14 @@ section {
   .about .text_con {
     gap: 10px;
   }
+
+  .service_card{
+    width: 300px;
+  }
+  .slide:first-child {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
 }
