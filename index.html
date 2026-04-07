@@ -25,13 +25,29 @@
         </div>
         <nav class="navBar">
           <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Our Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Reach out to us</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Reach out to us</a>
         </nav>
       </div>
     </header>
+
+    <section class="modal_wrapper">
+      <div class="modal">
+        <i class="fa-solid fa-x" id="close_btn" onclick="closeModal()"></i>
+        <i class="fa-solid fa-cookie-bite"></i>
+        <h3>We use cookies</h3>
+        <p>
+          This helps us in improving your user experience in this website.
+          Accept to continue.
+        </p>
+        <div>
+          <a href="#" id="acceptCookie" onclick="closeModal()">Accept</a>
+          <a href="#" id="declineCookie" onclick="closeModal()">Decline</a>
+        </div>
+      </div>
+    </section>
 
     <section class="front">
       <div class="wrapper">
@@ -39,9 +55,10 @@
           <h1>FadFaith Technologies</h1>
           <i>Bringing the best of Tech to you</i>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error earum
-            doloremque eius eveniet alias, similique iusto vel cupiditate
-            dolores eaque.
+            FadFaith Technologies provides the best Tech solutions. We provide
+            various services that makes your work very easy. From a busy-working
+            day to an automated life. Everything you desire regarding Tech is
+            here! <i>Feel free to look.</i>
           </p>
           <a href="#" class="btn">Hire us now!</a>
         </div>
@@ -52,7 +69,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="wrapper">
         <div class="img_con">
           <img src="assets\images\webService.png" alt="" />
@@ -87,7 +104,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="wrapper">
         <div class="slide">
           <div class="service_card">
@@ -101,7 +118,7 @@
                 many more.
                 <i>To request for this service just click the button below</i>
               </p>
-              <a href="#" class="btn">Request</a>
+              <a href="#" class="service_card_btn">Request</a>
             </div>
             <div class="img_con">
               <img src="assets\images\developer.png" alt="" />
@@ -116,7 +133,7 @@
                 level, so as to meet up with the technological advancement.
                 <i>To request for this service just click the button below</i>
               </p>
-              <a href="#" class="btn">Request</a>
+              <a href="#" class="service_card_btn">Request</a>
             </div>
             <div class="img_con">
               <img src="assets\images\ict_training.png" alt="" />
@@ -131,12 +148,214 @@
                 procurements, software support and many more.
                 <i>To request for this service just click the button below</i>
               </p>
-              <a href="#" class="btn">Request</a>
+              <a href="#" class="service_card_btn">Request</a>
             </div>
             <div class="img_con" style="width: 200px">
               <img src="assets\images\consultant.png" alt="" />
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper">
+        <div class="portfolio_card">
+          <div class="portfolio_text">
+            <h3>Edullam</h3>
+            <p>
+              Edullam is a CMS website for college and schools. It provides an
+              easy way to track transactions, enable digital payments for
+              students and easy navigation of important students records.
+              <i>"No weight just Tech"</i>
+            </p>
+            <a href="#">Click here</a>
+          </div>
+          <div class="portfolio_img">
+            <img src="assets\images\edullam.png" alt="" />
+          </div>
+        </div>
+        <div class="portfolio_card">
+          <div class="portfolio_text">
+            <h3>StoreFlow</h3>
+            <p>
+              StoreFlow is a Stock keeping app. This provides easy Stock keeping
+              tools for local and dveloped stores. Reciepts printing, Stock
+              tracking, scheduled reminders before products get empty and many
+              more.
+              <i>Keeping your stores organized</i>
+            </p>
+            <a href="#">Click here</a>
+          </div>
+          <div class="portfolio_img">
+            <img src="assets\images\storeflow.jpg" alt="" />
+          </div>
+        </div>
+        <div class="portfolio_card">
+          <div class="portfolio_text">
+            <h3>FarmHub</h3>
+            <p>
+              FarmHub is an automation farm app. It helps in tracking your
+              plants growth, it provides seamless and automated services that
+              doesnt require stress. it notifies you when your plant is low on
+              sunlight or water, and it does alot more.
+              <i>Farming made easy</i>
+            </p>
+            <a href="#">Click here</a>
+          </div>
+          <div class="portfolio_img">
+            <img src="assets\images\farmhub.jpg" alt="" />
+          </div>
+        </div>
+        <div class="portfolio_card">
+          <div class="portfolio_text">
+            <h3>EcoRide</h3>
+            <p>
+              Ecoride is a digital transport/delivery system. It is an app
+              created to work alongsides with an hardwared motocycle built by
+              students that doesnt need a driver.
+              <i>Making transport the better and safer</i>
+            </p>
+            <a href="#">Click here</a>
+          </div>
+          <div class="portfolio_img">
+            <img src="assets\images\ecoride.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer">
+      <div class="wrapper">
+        <div class="customer_heading">
+          <h1>What <span>Clients</span> say!</h1>
+          <p>
+            Observe the wonderful reviews given to us by our clients, concerning
+            the services we rendered to them.
+          </p>
+        </div>
+        <div class="customer_container">
+          <div class="customer_card">
+            <div class="customer_profile">
+              <div class="customer_profile_img">
+                <img src="assets\images\developer.png" alt="" />
+              </div>
+              <div class="customer_profile_details">
+                <h3>Mr. Tanjiro</h3>
+                <p>College Headmaster</p>
+              </div>
+            </div>
+            <div class="customer_text">
+              <p>
+                Thanks alot for the website! You really met all my expectations.
+                I would refer you to as many clients as i can find. God bless
+                you.
+              </p>
+              <div class="customer_review_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star" style="color: #fff"></i>
+                <i class="fa-solid fa-star" style="color: #fff"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer_card">
+            <div class="customer_profile">
+              <div class="customer_profile_img">
+                <img src="assets\images\freddy.jpg" alt="" />
+              </div>
+              <div class="customer_profile_details">
+                <h3>John Freddy</h3>
+                <p>HR Manager</p>
+              </div>
+            </div>
+            <div class="customer_text">
+              <p>
+                FadFaith Technologies is the best tech solutions i have ever
+                come across. I tested other Tech Solutions, some were scams,
+                some provided loww services, but you, i give you 5 stars.
+              </p>
+              <div class="customer_review_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="customer_card">
+            <div class="customer_profile">
+              <div class="customer_profile_img">
+                <img src="assets\images\praise.jpg" alt="" />
+              </div>
+              <div class="customer_profile_details">
+                <h3>Praise O.</h3>
+                <p>Student/Fullstack Developer</p>
+              </div>
+            </div>
+            <div class="customer_text">
+              <p>
+                FadFaith is the best! You taught me alot, you are the best ICT
+                consultant, mentor and tutor, i recommend your services to
+                anyone who aspires for the best! Thank you once again!
+              </p>
+              <div class="customer_review_stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.115492643442!2d3.9603910740524717!3d7.452473311673382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039937b1878e35d%3A0xd0d29083ef94161!2sFadFaith%20Technologies!5e0!3m2!1sen!2sng!4v1755016372447!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+ 
+
+    <section class="contact" id="contact">
+      <div class="wrapper">
+        <div class="contact_logo">
+          <img src="assets\images\logo.png" alt="" />
+        </div>
+        <div class="contact_text">
+          <div>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Our Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Reach out to us</a>
+          </div>
+          <div>
+            <p>
+              FadFaith Tech. is the best contact us now to book a seat in our
+              world changing journey.
+            </p>
+          </div>
+          <div id="rights">
+            <p>@2025 FadFaith All rights reserved</p>
+          </div>
+        </div>
+        <div class="contact_links">
+          <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="#"> <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"> <i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
     </section>
